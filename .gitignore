@@ -24,5 +24,6 @@ desktop.ini
 # Sometimes Vim leaves leftover files after it closes: 
 *.un~
 *.swp
+*.*~
 
 # EOF
