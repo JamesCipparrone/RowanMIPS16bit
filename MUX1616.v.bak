@@ -1,0 +1,73 @@
+module MUX1616(in, out, reg0, reg1, reg2, reg3, reg4, reg5, reg6, reg7, reg8, reg9, reg10, reg11, reg12, reg13, reg14, reg15);
+	input [3:0]in;
+	input [15:0]reg0;
+	input [15:0]reg1;
+	input [15:0]reg2;
+	input [15:0]reg3;
+	input [15:0]reg4;
+	input [15:0]reg5;
+	input [15:0]reg6;
+	input [15:0]reg7;
+	input [15:0]reg8;
+	input [15:0]reg9;
+	input [15:0]reg10;
+	input [15:0]reg11;
+	input [15:0]reg12;
+	input [15:0]reg13;
+	input [15:0]reg14;
+	input [15:0]reg15;
+	output reg [15:0]out;
+	
+	always
+	
+	if(in == 0 )
+	assign out = reg0;
+	
+	else if (in == 1)
+	assign out = reg1;
+	
+	else if (in == 2)
+	assign out = reg2;
+	
+	else if (in == 3)
+	assign out = reg3;
+	
+	else if (in == 4)
+	assign out = reg4;
+	
+	else if (in == 5)
+	assign out = reg5;
+	
+	else if (in == 6)
+	assign out = reg6;
+	
+	else if (in == 7)
+	assign out = reg7;
+	
+	else if (in == 8)
+	assign out = reg8;
+	
+	else if (in == 9)
+	assign out = reg9;
+	
+	else if (in == 10)
+	assign out = reg10;
+	
+	else if (in == 11)
+	assign out = reg11;
+	
+	else if (in == 12)
+	assign out = reg12;
+	
+	else if (in == 13)
+	assign out = reg13;
+	
+	else if (in == 14)
+	assign out = reg14;
+	
+	else
+	assign out = reg15;
+	
+	
+	
+endmodule
