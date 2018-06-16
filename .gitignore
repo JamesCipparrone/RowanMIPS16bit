@@ -1,0 +1,28 @@
+# The .gitignore file specifies files and filetypes that git and GitHub
+# will ignore and leave out of the repository. 
+# 
+# The asterisk '*' is a wildcard character that substitutes for any number of 
+# characters (0 or more). So if "*.txt" is on a line by itself, all plain text 
+# files will be ignored.
+# -- James 2018-06-16
+
+# How to ignore entire folders: 
+RowanMIPS16bit/simulation/modelsim/
+RowanMIPS16bit/ModelSimAltera/
+
+# Quartus II makes backup copies of source code files. 
+*.bak
+
+# Quartus II also can generate large numbers of large files, so 
+# include those filetypes below, if you run into them. 
+
+
+# Windows generates these files: 
+thumbs.db
+desktop.ini
+
+# Sometimes Vim leaves leftover files after it closes: 
+*.un~
+*.swp
+
+# EOF
