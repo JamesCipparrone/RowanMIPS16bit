@@ -1,0 +1,7 @@
+module mux4(F, S, W, X, Y, Z)
+	input W, X, Y, Z;
+	input [1:0]S;
+	output wire F;
+	
+	assign F = S[1] ? (S[0] ? Z : Y) : (S[0] ? X : Y);
+endmodule
