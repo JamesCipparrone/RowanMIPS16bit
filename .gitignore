@@ -1,5 +1,5 @@
-# The .gitignore file specifies files and filetypes that git and GitHub
-# will ignore and leave out of the repository. 
+# The .gitignore file specifies files, filetypes, and directories that 
+# git and GitHub will ignore and leave out of a repository.
 # 
 # The asterisk '*' is a wildcard character that substitutes for any number of 
 # characters (0 or more). So if "*.txt" is on a line by itself, all plain text 
@@ -9,22 +9,23 @@
 # How to ignore entire folders: 
 RowanMIPS16bit/simulation/modelsim/
 RowanMIPS16bit/ModelSimAltera/
+RowanMIPS16bit/ignoreThisFolder/
 
-# Quartus II makes backup copies of source code files. 
+# Quartus II makes backup copies of source code files. We don't need to pass them around. 
 *.bak
 
-# Quartus II also can generate large numbers of large files, so 
-# include those filetypes below, if you run into them. 
+# Quartus II can generate large numbers of large files, so if you encounter
+# any such files, include their filetypes here:  
 
 
-# Windows generates these files: 
+
+# Windows generates these files automatically: 
 thumbs.db
 desktop.ini
 
 # Sometimes Vim leaves leftover files after it closes: 
-*.un~
-*.swp
 *.*~
+*.swp
 
 
 ## 	An example from Git: 
@@ -32,7 +33,7 @@ desktop.ini
 # 	Lines that start with '#' are comments.
 # 	For a project mostly in C, the following would be a good set of
 # 	exclude patterns (uncomment them if you want to use them):
- *.[oa]
+# *.[oa]
 # *~
 
 # EOF #########################################################################
